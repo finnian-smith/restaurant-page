@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Generic restaurant page template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finnian-smith/restaurant-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/finnian-smith/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/finnian-smith/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
