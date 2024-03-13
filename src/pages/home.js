@@ -1,4 +1,5 @@
 import homeImage from "../assets/images/restaurant-home-image.jpeg";
+import "../styles/main.css";
 
 function home() {
   const contentDiv = document.getElementById("content");
@@ -8,6 +9,7 @@ function home() {
   // title
   const title = document.createElement("p");
   title.textContent = "Exquisite dining since 1989";
+  title.classList.add("home-title");
   contentDiv.appendChild(title);
 
   // description
