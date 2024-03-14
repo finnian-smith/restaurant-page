@@ -16,7 +16,9 @@
 :root {
   --main-font-family: "League Spartan", sans-serif;
   --primary-text-color: #ffffff;
+  --secondary-text-color: #262626;
   --primary-background-color: #262626;
+  --secondary-background-color: #ffffff;
   --burger-menu-bar-color: #ffffff;
   --nav-link-hover-color: #aaaaaa;
 }
@@ -28,13 +30,15 @@ html {
   color: var(--primary-text-color);
 }
 
+/* Need to reverse approach here + 1st media query */
+/* (desktop 1st design <-> mobile 1st design) */
 /* Navbar */
 .navbar {
   min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .nav-branding {
@@ -119,5 +123,11 @@ html {
 
   .nav-menu.active {
     left: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    padding: 0 40px;
   }
 }
