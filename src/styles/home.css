@@ -1,0 +1,47 @@
+:root {
+  --button-text-color: #ffffff;
+  --button-border-color: #ffffff;
+  --button-hover-text-color: #262626;
+  --button-hover-background-color: #ffffff;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 20px 0;
+  order: 2;
+}
+
+.home-description {
+  text-align: center;
+  order: 3;
+}
+
+.book-table-button {
+  margin: 40px auto 20px;
+  padding: 20px 60px;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  color: var(--button-text-color);
+  border: 1px solid var(--button-border-color);
+  background-color: transparent;
+  transition: all 0.5s ease;
+  order: 4;
+}
+
+.book-table-button:hover {
+  cursor: pointer;
+  color: var(--button-hover-text-color);
+  background-color: var(--button-hover-background-color);
+}
+
+.home-image {
+  order: 1;
+}
