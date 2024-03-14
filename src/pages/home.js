@@ -7,30 +7,39 @@ function home() {
 
   contentDiv.innerHTML = "";
 
+  // sections a + b
+  const sectionA = document.createElement("div");
+  sectionA.classList.add("section-a");
+  const sectionB = document.createElement("div");
+  sectionB.classList.add("section-b");
+
   // title
   const title = document.createElement("p");
   title.textContent = "Exquisite dining since 1989";
   title.classList.add("home-title");
-  contentDiv.appendChild(title);
+  sectionA.appendChild(title);
 
   // description
   const description = document.createElement("p");
   description.textContent =
     "Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse.";
   description.classList.add("home-description");
-  contentDiv.appendChild(description);
+  sectionA.appendChild(description);
 
   // book table button
   const bookTableButton = document.createElement("button");
   bookTableButton.textContent = "Book a Table";
   bookTableButton.classList.add("book-table-button");
-  contentDiv.appendChild(bookTableButton);
+  sectionA.appendChild(bookTableButton);
 
   // image
   const mainImage = document.createElement("img");
   mainImage.src = homeImage;
   mainImage.classList.add("home-image");
-  contentDiv.appendChild(mainImage);
+  sectionB.appendChild(mainImage);
+
+  contentDiv.appendChild(sectionA);
+  contentDiv.appendChild(sectionB);
 }
 
 export default home;
