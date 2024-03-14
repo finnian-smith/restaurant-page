@@ -14,9 +14,11 @@
 }
 
 :root {
+  --main-font-family: "League Spartan", sans-serif;
   --primary-text-color: #ffffff;
   --primary-background-color: #262626;
-  --main-font-family: "League Spartan", sans-serif;
+  --burger-menu-bar-color: #ffffff;
+  --nav-link-hover-color: #aaaaaa;
 }
 
 html {
@@ -53,15 +55,18 @@ html {
 }
 
 .nav-link {
-  transition: 0.7s ease;
+  transition: 0.5s ease;
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
   padding: 5px 10px;
   border: none;
+  font-family: var(--main-font-family);
+  font-size: 1rem;
 }
 
 .nav-link:hover {
-  color: dodgerblue;
+  cursor: pointer;
+  color: var(--nav-link-hover-color);
 }
 
 .hamburger {
@@ -76,7 +81,7 @@ html {
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
-  background-color: white;
+  background-color: var(--burger-menu-bar-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -102,7 +107,7 @@ html {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: #262626;
+    background-color: var(--primary-background-color);
     width: 100%;
     text-align: center;
     transition: 0.3s;

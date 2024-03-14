@@ -29,10 +29,12 @@
 }
 
 .book-table-button {
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 1.1rem;
   margin: 40px auto 20px;
   padding: 20px 60px;
   text-transform: uppercase;
-  word-spacing: 3px;
   color: var(--button-text-color);
   border: 1px solid var(--button-border-color);
   background-color: transparent;
@@ -75,7 +77,6 @@
   #content {
     display: flex;
     flex-direction: row;
-    /* height: 100vh; */
   }
 
   .section-a {
@@ -99,7 +100,7 @@
 
   .book-table-button {
     margin: 40px 0 20px;
-    padding: 20px 40px;
+    padding: 20px;
     width: 60%;
   }
 
