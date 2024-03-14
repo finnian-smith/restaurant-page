@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "League Spartan";
+  src: url("../assets/fonts/league-spartan-variable-font.ttf")
+    format("truetype");
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
+}
+
 /* CSS Reset */
 * {
   box-sizing: border-box;
@@ -8,10 +16,12 @@
 :root {
   --primary-text-color: #ffffff;
   --primary-background-color: #262626;
+  --main-font-family: "League Spartan", sans-serif;
 }
 
 html {
   font-size: 16px;
+  font-family: var(--main-font-family);
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
 }
