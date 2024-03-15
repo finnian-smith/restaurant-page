@@ -21,6 +21,10 @@
   --secondary-background-color: #ffffff;
   --burger-menu-bar-color: #ffffff;
   --nav-link-hover-color: #aaaaaa;
+  --button-text-color: #ffffff;
+  --button-border-color: #ffffff;
+  --button-hover-text-color: #262626;
+  --button-hover-background-color: #ffffff;
 }
 
 html {

@@ -1,11 +1,15 @@
 import aboutTableImage from "../assets/images/table-about-image.jpeg";
 import aboutFoodImage from "../assets/images/food-about-image.jpeg";
+import "../styles/main.css";
 import "../styles/about.css";
 
 function about() {
   const contentDiv = document.getElementById("content");
 
   contentDiv.innerHTML = "";
+
+  const aboutContainer = document.createElement("div");
+  aboutContainer.classList.add("about-container");
 
   const tableTextContent = document.createElement("div");
   tableTextContent.classList.add("about-text-content");
@@ -66,8 +70,10 @@ function about() {
   imageTwoContainer.appendChild(imageTwo);
   foodSection.appendChild(imageTwoContainer);
 
-  contentDiv.appendChild(tableSection);
-  contentDiv.appendChild(foodSection);
+  aboutContainer.appendChild(tableSection);
+  aboutContainer.appendChild(foodSection);
+
+  contentDiv.appendChild(aboutContainer);
 }
 
 export default about;

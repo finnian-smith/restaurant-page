@@ -1,11 +1,4 @@
-:root {
-  --button-text-color: #ffffff;
-  --button-border-color: #ffffff;
-  --button-hover-text-color: #262626;
-  --button-hover-background-color: #ffffff;
-}
-
-#content {
+.home-container {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -74,7 +67,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  #content {
+  .home-container {
     display: flex;
     flex-direction: row;
   }

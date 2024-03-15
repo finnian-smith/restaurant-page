@@ -7,6 +7,9 @@ function home() {
 
   contentDiv.innerHTML = "";
 
+  const homeContainer = document.createElement("div");
+  homeContainer.classList.add("home-container");
+
   // sections a + b
   const sectionA = document.createElement("div");
   sectionA.classList.add("section-a");
@@ -38,8 +41,10 @@ function home() {
   mainImage.classList.add("home-image");
   sectionB.appendChild(mainImage);
 
-  contentDiv.appendChild(sectionA);
-  contentDiv.appendChild(sectionB);
+  homeContainer.appendChild(sectionA);
+  homeContainer.appendChild(sectionB);
+
+  contentDiv.appendChild(homeContainer);
 }
 
 export default home;
