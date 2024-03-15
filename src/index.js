@@ -31,8 +31,7 @@ const aboutTab = document.querySelector(".about-button");
 const menuTab = document.querySelector(".menu-button");
 
 document.addEventListener("DOMContentLoaded", () => {
-  //   home(); change to menu() for testing menu
-  menu();
+  home();
 
   homeTab.addEventListener("click", () => {
     home();
