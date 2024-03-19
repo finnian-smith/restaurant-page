@@ -34,9 +34,6 @@ html {
   color: var(--primary-text-color);
 }
 
-/* Need to reverse approach here + 1st media query */
-/* (desktop 1st design <-> mobile 1st design) */
-/* Navbar */
 .navbar {
   min-height: 70px;
   display: flex;
@@ -49,13 +46,6 @@ html {
   font-size: 2rem;
   text-decoration: none;
   color: var(--primary-text-color);
-}
-
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
 }
 
 .nav-menu li {
@@ -77,11 +67,6 @@ html {
   color: var(--nav-link-hover-color);
 }
 
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
-
 .bar {
   display: block;
   width: 25px;
@@ -92,46 +77,66 @@ html {
   background-color: var(--burger-menu-bar-color);
 }
 
-@media screen and (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
 
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
 
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
 
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: var(--primary-background-color);
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.nav-item {
+  margin: 16px 0;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 0 50px;
   }
 
   .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: var(--primary-background-color);
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: static;
+    align-items: center;
+    gap: 60px;
   }
 
-  .nav-item {
-    margin: 16px 0;
-  }
-
-  .nav-menu.active {
-    left: 0;
+  .hamburger {
+    display: none;
+    cursor: pointer;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .navbar {
-    padding: 0 40px;
+    padding: 0 100px;
   }
 }
