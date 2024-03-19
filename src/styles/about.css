@@ -80,6 +80,19 @@
     margin-bottom: 50px;
   }
 
+  .table-section {
+    position: relative;
+  }
+
+  .table-section:after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    height: 1px;
+    background-color: #aaaaaa;
+  }
+
   .about-image-container {
     width: 48%;
   }
